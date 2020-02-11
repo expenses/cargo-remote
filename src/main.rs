@@ -170,7 +170,7 @@ fn main() {
     rsync_to
         .arg("-a".to_owned())
         .arg("--delete")
-        .arg("--compress")
+        .arg("-zz")
         .arg("--info=progress2")
         .arg("--exclude")
         .arg("target");
